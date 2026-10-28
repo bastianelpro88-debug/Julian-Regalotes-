@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#10051f">
+<meta name="description" content="Una sorpresa gamer morada de cumpleaños para Julian Gomez.">
+<title>🎂 Feliz cumpleaños, Julian</title>
+<style>
+:root{--bg:#090512;--panel:rgba(25,12,45,.78);--purple:#b76cff;--pink:#ff69d4;--cyan:#78f7ff;--text:#f8f1ff;--muted:#cbbbdc}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 50% 0%,#32105c 0%,#10071f 45%,#07040d 100%);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;overflow-x:hidden}
+#particles{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}
+main{position:relative;z-index:1;width:min(920px,100%);margin:auto;padding:24px 16px 60px}
+.topline{text-align:center;letter-spacing:.22em;text-transform:uppercase;font-size:.72rem;color:var(--cyan);margin:18px 0 12px}
+.hero{text-align:center;padding:36px 12px 26px}
+.orb{width:116px;height:116px;margin:0 auto 24px;border-radius:50%;display:grid;place-items:center;font-size:3.2rem;background:radial-gradient(circle at 30% 25%,#fff,#e5b9ff 14%,#8e32f5 42%,#350a69 72%);box-shadow:0 0 24px #b76cff,0 0 70px #8b35e880;animation:float 4s ease-in-out infinite}
+h1{font-size:clamp(2.5rem,10vw,5.4rem);line-height:.98;letter-spacing:-.055em;margin:0;text-shadow:0 0 14px #c46cff,0 0 42px #a33bff80}
+h1 span{display:block;color:var(--pink)}
+.subtitle{max-width:580px;margin:22px auto 0;color:var(--muted);font-size:1.04rem;line-height:1.7}
+.tag{display:inline-flex;gap:8px;align-items:center;border:1px solid #b76cff80;background:#a63bff15;border-radius:999px;padding:9px 14px;color:#f0d9ff;font-size:.82rem;margin-top:22px}
+.card{background:var(--panel);border:1px solid #b76cff55;border-radius:24px;padding:clamp(20px,5vw,36px);margin:20px 0;box-shadow:0 10px 45px #0004,inset 0 0 35px #a63bff08;backdrop-filter:blur(12px)}
+.kicker{color:var(--cyan);font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;margin:0 0 10px}
+h2{font-size:clamp(1.5rem,5vw,2.2rem);margin:0 0 18px}
+.letter{font-size:1.06rem;line-height:1.9;color:#f1e6ff;white-space:pre-line}
+.signature{color:var(--pink);font-weight:750;margin-top:20px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.tile{padding:18px 12px;text-align:center;border:1px solid #ffffff18;border-radius:18px;background:#ffffff06}
+.tile .emoji{font-size:1.8rem;display:block;margin-bottom:8px}
+.tile strong{display:block;margin-bottom:6px}
+.tile small{color:var(--muted);line-height:1.5}
+.actions{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin:24px 0}
+button{font:inherit;font-weight:750;border:0;border-radius:14px;padding:14px 19px;cursor:pointer;transition:transform .2s,box-shadow .2s}
+button:hover{transform:translateY(-2px)}
+button:focus-visible{outline:3px solid var(--cyan);outline-offset:4px}
+.primary{background:linear-gradient(100deg,#c879ff,#ff72d7);color:#180624;box-shadow:0 0 24px #b76cff66}
+.secondary{background:#ffffff0a;border:1px solid #b76cff80;color:var(--text)}
+#secret{display:none;margin-top:20px;padding:22px;border-radius:18px;border:1px dashed var(--pink);background:#ff69d40d;text-align:center;animation:pop .45s ease both}
+#secret.show{display:block}
+#secret p{font-size:1.08rem;line-height:1.75;margin:8px 0}
+.footer{text-align:center;color:#a999ba;font-size:.82rem;padding:25px 8px}
+.spark{position:fixed;pointer-events:none;z-index:5;font-size:20px;animation:sparkle 1.2s ease-out forwards}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes pop{from{opacity:0;transform:scale(.94) translateY(8px)}to{opacity:1;transform:scale(1) translateY(0)}}
+@keyframes sparkle{0%{opacity:0;transform:translate(0,0) scale(.3)}15%{opacity:1}100%{opacity:0;transform:translate(var(--dx),var(--dy)) scale(1.4) rotate(35deg)}}
+@media(max-width:560px){main{padding:16px 13px 40px}.hero{padding:26px 5px 18px}.grid{grid-template-columns:1fr}.tile{display:flex;align-items:center;text-align:left;gap:14px;padding:14px}.tile .emoji{margin:0}.tile small{display:block}.card{border-radius:20px}.actions button{width:100%}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<canvas id="particles" aria-hidden="true"></canvas>
+<main>
+  <div class="topline">✦ Una sorpresa hecha con cariño ✦</div>
+  <header class="hero">
+    <div class="orb" aria-hidden="true">🎮</div>
+    <h1>Feliz cumple,<span>Julian ✨</span></h1>
+    <p class="subtitle">Hoy se desbloquea un nuevo nivel. Esta pequeña página es para celebrar a alguien que dejó recuerdos muy buenos y que seguimos echando de menos.</p>
+    <div class="tag">🟣 PLAYER 1 · DÍA ESPECIAL</div>
+    <div class="actions">
+      <button class="primary" id="fireworksBtn">🎆 ¡Lanzar fuegos artificiales!</button>
+      <button class="secondary" id="letterBtn">💌 Leer tu carta</button>
+    </div>
+  </header>
+
+  <section class="card" id="letter">
+    <p class="kicker">Mensaje desbloqueado · 01</p>
+    <h2>Una carta para ti 💜</h2>
+    <div class="letter">¡Feliz cumpleaños, Julian!! Espero que la estés pasando muy bien.
+
+¡Fuiste el mejor compañero! Y hasta el día de hoy seguimos extrañándote, bro.
+
+Que te vaya bien en tu viaje y sigue así, que serás el mejor compañero. :)
+
+¡Disfruta tu día, crea recuerdos increíbles y que este nuevo nivel venga lleno de cosas buenas!</div>
+    <div class="signature">— Con cariño, tus compañeros ✦</div>
+  </section>
+
+  <section class="card">
+    <p class="kicker">Tus logros desbloqueados</p>
+    <h2>Lo que te deseamos 🌟</h2>
+    <div class="grid">
+      <div class="tile"><span class="emoji">🚀</span><div><strong>Nuevas aventuras</strong><small>Que tu viaje te traiga experiencias geniales.</small></div></div>
+      <div class="tile"><span class="emoji">🎯</span><div><strong>Grandes metas</strong><small>Que sigas avanzando y confiando en ti.</small></div></div>
+      <div class="tile"><span class="emoji">🤝</span><div><strong>Buenos recuerdos</strong><small>Que nunca falten las amistades y las risas.</small></div></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <p class="kicker">¿Te atreves?</p>
+    <h2>Hay una sorpresa secreta 👀</h2>
+    <p class="subtitle" style="margin:0;text-align:left">Psst… hay un mensaje extra escondido aquí. Solo tienes que desbloquearlo.</p>
+    <div class="actions" style="justify-content:flex-start">
+      <button class="primary" id="secretBtn">🔓 Desbloquear sorpresa</button>
+    </div>
+    <div id="secret" aria-live="polite">
+      <div style="font-size:2rem">💜✨🎂✨💜</div>
+      <p><strong>¡Julian, esta página es un recordatorio de que dejaste huella!</strong></p>
+      <p>La distancia no borra los buenos momentos. ¡Que tengas un cumpleaños bacán y que te vaya increíble en todo lo que venga!</p>
+      <button class="secondary" id="moreFireworks">🎆 ¡Celebrémoslo!</button>
+    </div>
+  </section>
+
+  <footer class="footer">Hecho con cariño, buenos recuerdos y un poquito de magia gamer morada. 💜<br>¡Feliz cumpleaños, Julian Gomez!</footer>
+</main>
+<script>
+(() => {
+  const canvas = document.getElementById('particles');
+  const ctx = canvas.getContext('2d');
+  let w=0,h=0,stars=[],bursts=[],raf;
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function resize(){
+    const dpr=Math.min(window.devicePixelRatio||1,2);
+    w=window.innerWidth;h=window.innerHeight;
+    canvas.width=w*dpr;canvas.height=h*dpr;
+    canvas.style.width=w+'px';canvas.style.height=h+'px';
+    ctx.setTransform(dpr,0,0,dpr,0,0);
+    stars=Array.from({length:Math.min(95,Math.floor(w/5))},()=>({x:Math.random()*w,y:Math.random()*h,r:Math.random()*1.8+.35,a:Math.random()*.6+.15,s:Math.random()*.25+.05}));
+  }
+  function draw(){
+    ctx.clearRect(0,0,w,h);
+    for(const p of stars){
+      p.y-=p.s;if(p.y<0){p.y=h;p.x=Math.random()*w}
+      ctx.globalAlpha=p.a*(.65+.35*Math.sin(Date.now()/800+p.x));
+      ctx.fillStyle=Math.random()>.5?'#d9a7ff':'#8cf7ff';
+      ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fill();
+    }
+    ctx.globalAlpha=1;
+    bursts=bursts.filter(b=>b.life>0);
+    for(const b of bursts){
+      b.life-=1;
+      for(const p of b.parts){
+        p.x+=p.vx;p.y+=p.vy;p.vy+=.045;p.vx*=.992;p.vy*=.992;
+        ctx.globalAlpha=Math.max(0,b.life/65);
+        ctx.fillStyle=p.c;ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fill();
+      }
+    }
+    ctx.globalAlpha=1;
+    if(!reduce) raf=requestAnimationFrame(draw);
+  }
+  function burst(x=w/2,y=h*.35){
+    const colors=['#c879ff','#ff72d7','#8cf7ff','#ffffff','#f4b8ff'];
+    const parts=Array.from({length:85},()=>{const a=Math.random()*Math.PI*2, speed=Math.random()*5+1;return{x,y,vx:Math.cos(a)*speed,vy:Math.sin(a)*speed,r:Math.random()*2.5+1,c:colors[Math.floor(Math.random()*colors.length)]}});
+    bursts.push({parts,life:65});
+    if(reduce){
+      ctx.clearRect(0,0,w,h);
+      for(const p of parts){ctx.fillStyle=p.c;ctx.beginPath();ctx.arc(x+p.vx*5,y+p.vy*5,p.r,0,Math.PI*2);ctx.fill()}
+      setTimeout(()=>ctx.clearRect(0,0,w,h),800);
+    }
+  }
+  function confettiAt(x,y){
+    const emojis=['✨','💜','🎉','⭐','🎂'];
+    for(let i=0;i<18;i++){
+      const e=document.createElement('span');e.className='spark';e.textContent=emojis[Math.floor(Math.random()*emojis.length)];
+      e.style.left=x+'px';e.style.top=y+'px';e.style.setProperty('--dx',(Math.random()*260-130)+'px');e.style.setProperty('--dy',(Math.random()*-240-30)+'px');
+      document.body.appendChild(e);setTimeout(()=>e.remove(),1300);
+    }
+  }
+  resize();draw();window.addEventListener('resize',resize);
+  document.getElementById('fireworksBtn').addEventListener('click',e=>{burst(w*(.25+Math.random()*.5),h*(.22+Math.random()*.35));confettiAt(e.clientX,e.clientY)});
+  document.getElementById('moreFireworks').addEventListener('click',e=>{for(let i=0;i<3;i++)setTimeout(()=>burst(w*(.15+Math.random()*.7),h*(.18+Math.random()*.4)),i*180);confettiAt(e.clientX,e.clientY)});
+  document.getElementById('letterBtn').addEventListener('click',()=>document.getElementById('letter').scrollIntoView({behavior:reduce?'auto':'smooth',block:'start'}));
+  document.getElementById('secretBtn').addEventListener('click',()=>{const s=document.getElementById('secret');s.classList.add('show');document.getElementById('secretBtn').textContent='✅ Sorpresa desbloqueada';burst(w/2,h*.45);confettiAt(w/2,h*.45);});
+})();
+</script>
+</body>
+</html>

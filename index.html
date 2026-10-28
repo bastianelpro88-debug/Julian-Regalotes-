@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10051f">
+  <title>Julian | Links oficiales</title>
+  <style>
+    :root{color-scheme:dark;--bg:#10051f;--purple:#a855f7;--pink:#f0abfc;--cyan:#67e8f9}
+    *{box-sizing:border-box}
+    body{margin:0;min-height:100vh;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#fff;background:radial-gradient(ellipse at top,#3b0764 0%,#19072d 42%,var(--bg) 78%);display:grid;place-items:center;padding:24px;overflow-x:hidden}
+    .stars{position:fixed;inset:0;pointer-events:none;opacity:.7;background-image:radial-gradient(2px 2px at 20% 30%,#fff 50%,transparent 60%),radial-gradient(1.5px 1.5px at 75% 22%,#f0abfc 50%,transparent 60%),radial-gradient(2px 2px at 60% 80%,#67e8f9 50%,transparent 60%),radial-gradient(1px 1px at 88% 65%,#fff 50%,transparent 60%);background-size:230px 190px;animation:drift 18s linear infinite}
+    @keyframes drift{to{background-position:230px 190px}}
+    .wrap{width:min(100%,460px);position:relative;z-index:1;text-align:center}
+    .orb{width:104px;height:104px;margin:0 auto 18px;border-radius:32px;display:grid;place-items:center;font-size:46px;background:linear-gradient(135deg,#7e22ce,#c026d3 55%,#6d28d9);box-shadow:0 0 25px #a855f7aa, inset 0 0 20px #fff3;transform:rotate(-5deg);animation:float 3s ease-in-out infinite}
+    @keyframes float{50%{transform:translateY(-7px) rotate(3deg)}}
+    .tag{display:inline-block;padding:6px 12px;border:1px solid #c084fc88;border-radius:999px;color:#e9d5ff;font-size:12px;letter-spacing:2px;text-transform:uppercase;background:#581c8733}
+    h1{font-size:clamp(34px,9vw,52px);line-height:1.05;margin:15px 0 10px;text-shadow:0 0 18px #c084fc88}
+    .sub{color:#d8b4fe;margin:0 auto 26px;max-width:32ch}
+    .links{display:grid;gap:14px}
+    .link{display:flex;align-items:center;gap:14px;text-align:left;text-decoration:none;color:white;padding:17px;border:1px solid #c084fc66;border-radius:18px;background:linear-gradient(110deg,#ffffff12,#a855f71a);box-shadow:0 8px 25px #0003;transition:transform .2s,border-color .2s,box-shadow .2s}
+    .link:hover,.link:focus-visible{transform:translateY(-3px);border-color:#e9d5ff;box-shadow:0 0 22px #a855f755;outline:none}
+    .ico{width:48px;height:48px;flex:0 0 48px;border-radius:14px;display:grid;place-items:center;font-size:25px;background:#a855f733}
+    .info{min-width:0;flex:1}.info strong{display:block;font-size:17px}.info small{display:block;color:#d8b4fe;overflow-wrap:anywhere;margin-top:3px}
+    .arrow{font-size:24px;color:#e9d5ff}
+    .note{margin-top:25px;color:#a78bba;font-size:12px}
+    .spark{color:var(--cyan)}
+  </style>
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+  <main class="wrap">
+    <div class="orb" aria-hidden="true">💜</div>
+    <span class="tag">✦ perfil oficial ✦</span>
+    <h1>Julian <span class="spark">Gomez</span></h1>
+    <p class="sub">¡Qué bueno verte por aquí! Encuentra mis links aquí abajo 👾</p>
+    <nav class="links" aria-label="Enlaces de Julian">
+      <a class="link" href="https://youtube.com/@doblejj1?si=sQ7bOMyoc_JKhbu6" target="_blank" rel="noopener noreferrer">
+        <span class="ico" aria-hidden="true">▶️</span>
+        <span class="info"><strong>YouTube</strong><small>@doblejj1 · Ver canal</small></span>
+        <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="link" href="https://www.roblox.com/search/users?keyword=elpollito5007" target="_blank" rel="noopener noreferrer">
+        <span class="ico" aria-hidden="true">🎮</span>
+        <span class="info"><strong>Roblox</strong><small>elpollito5007 · Buscar perfil</small></span>
+        <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+    </nav>
+    <p class="note">Hecho con <span class="spark">✦</span> para Julian · Sin música, ligero y adaptable al celular</p>
+  </main>
+</body>
+</html>
